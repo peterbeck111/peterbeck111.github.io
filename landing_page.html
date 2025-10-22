@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNHCR Analytics Reporting HUB - Welcome</title>
+    <style>
+        /* Import Lato font to match the hub */
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header Style (from index4.html) */
+        .header {
+            background-color: #ffffff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+            color: #000000;
+        }
+
+        /* Logo Style (from index4.html) */
+        .logo {
+            text-align: right;
+        }
+
+        .logo img {
+            max-height: 60px; /* Matched to hub style */
+            width: auto;
+            display: inline-block;
+        }
+
+        /* Page Content Container */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0;
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            overflow: hidden; /* To contain floated elements and border-radius */
+        }
+
+        /* Hero Welcome Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 40px;
+            gap: 40px;
+        }
+
+        .hero-text {
+            flex-basis: 55%;
+        }
+
+        .hero-text h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #0072BC; /* UNHCR Blue */
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .hero-image {
+            flex-basis: 40%;
+            text-align: right;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Main Call-to-Action (CTA) Section */
+        .main-cta {
+            text-align: center;
+            padding: 50px 40px;
+            background-color: #f8f9fa; /* Light grey background */
+            border-top: 1px solid #dee2e6;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .main-cta h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .main-cta p {
+            font-size: 16px;
+            margin-bottom: 25px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #0072BC;
+            color: #ffffff;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #005a95; /* Darker blue on hover */
+        }
+
+        /* Support Links Section */
+        .support-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 40px;
+            gap: 40px;
+        }
+
+        .support-text {
+            flex-basis: 55%;
+        }
+
+        .support-text h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .support-text p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        .support-text ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .support-text li {
+            margin-bottom: 20px;
+        }
+
+        .support-link {
+            display: inline-block;
+            color: #0072BC;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 8px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+        
+        .support-link:before {
+            content: '➔ '; /* Arrow icon */
+            margin-right: 8px;
+        }
+
+        .support-link:hover {
+            text-decoration: none;
+            border-bottom-color: #0072BC;
+        }
+
+        .support-image {
+            flex-basis: 40%;
+            text-align: right;
+        }
+
+        .support-image img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero, .support-section {
+                flex-direction: column-reverse;
+                padding: 30px 25px;
+                text-align: center;
+            }
+
+            .hero-text, .support-text {
+                flex-basis: 100%;
+            }
+
+            .hero-image, .support-image {
+                flex-basis: 100%;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .hero-image img, .support-image img {
+                max-width: 80%;
+            }
+
+            .support-text {
+                flex-direction: column; /* Stack text and image on mobile */
+            }
+
+            .header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .header h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <h1>UNHCR Analytics Reporting HUB</h1>
+        <div class="logo">
+            <img src="unhcr_logo.png" alt="UNHCR, The UN Refugee Agency Logo">
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="hero">
+            <div class="hero-text">
+                <h2>Welcome to the Analytics Reporting Hub</h2>
+                <p>Your central source for business intelligence and data analysis. This hub consolidates key reports from various business areas to provide actionable insights, support decision-making, and streamline operations.</p>
+            </div>
+            <div class="hero-image">
+                <img src="landingpage03.png" alt="Data Analytics Illustration">
+            </div>
+        </div>
+
+        <div class="main-cta">
+            <h3>Access the Hub</h3>
+            <p>Browse the complete catalog of reports from AP, AR, Master Data, Financial Management, and more.</p>
+            <a href="index5.html" class="cta-button">Go to the Reporting Hub</a>
+        </div>
+
+        <div class="support-section">
+            <div class="support-text">
+                <h3>Guides & Procedures</h3>
+                <p>New to the hub? These documents will help you get started and find the reports you need.</p>
+                <ul>
+					<li>
+                        <a href="https://unhcr365.sharepoint.com/:w:/r/sites/DIST-ARH/Shared%20Documents/Str8n%20Reporting%20Hub_How%20to%20Guide.docx?d=wb523629823e84576a945ba1905a29e6f&csf=1&web=1&e=DowRbg" class="support-link" target="_blank">How-to Guide for the Reporting Hub</a>
+                    </li>
+                    <li>
+                        <a href="https://unhcr365.sharepoint.com/:w:/r/sites/DIST-ARH/Shared%20Documents/Str8n%20Reporting%20Hub_How%20to%20Guide.docx?d=wb523629823e84576a945ba1905a29e6f&csf=1&web=1&e=vPFybV" class="support-link" target="_blank">Reporting HUB Standard Operating Procedures (SOP)</a>
+                    </li>                 
+                </ul>
+            </div>
+            <div class="support-image">
+                <img src="landingpage02.png" alt="Team analyzing data on a laptop">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
